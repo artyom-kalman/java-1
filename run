@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export JAVA_HOME="${JAVA_HOME:-/usr/lib/jvm/java-21-openjdk}"
+export PATH="$JAVA_HOME/bin:$PATH"
+cd "$(dirname "$0")"
+
+if [[ "${1:-}" == "test" ]]; then
+  exec ./mvnw test
+fi
+
+exec ./mvnw -q exec:java
