@@ -20,8 +20,8 @@ void main() {
     System.out.printf("%s's weight (e.g. 65.7): ", name);
     weight = scanner.nextFloat();
 
-    System.out.printf("%s's age: %d", name, age);
-    System.out.printf("%s's height: %.1f Cm", name, height);
+    System.out.printf("%s's age: %d\n", name, age);
+    System.out.printf("%s's height: %.1f Cm\n", name, height);
     System.out.printf("%s's weight: %.1f Kg", name, weight);
 
     scanner.close();
