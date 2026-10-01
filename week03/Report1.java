@@ -1,11 +1,18 @@
-void main() {
-    boolean flag;
-    byte value1 = -128;
-    short value2 = 23445;
-    int value3 = 534534543;
-    long value4 = 453453463453453l;
-    double value5 = 3.14;
-    float value6 = 4.543f;
+import java.util.Scanner;
 
-    System.out.println(value1);
+void main() {
+    Scanner keyboard = new Scanner(System.in);
+
+    int first;
+    int second;
+
+    System.out.print("첫번째 숫자를 입력하세요 ");
+    first = keyboard.nextInt();
+
+    System.out.print("두번째 숫자를 입력하세요 ");
+    second = keyboard.nextInt();
+
+    System.out.printf("%d + %d = %d\n", first, second, first + second);
+
+    keyboard.close();
 }
